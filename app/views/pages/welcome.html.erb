@@ -1,13 +1,6 @@
-<h1>Welcome</h1>
-<p>
+<% @posts.each do |post| %>
+  <%= render 'posts/post', post: post %>
 
-	This is Jacqueline's first Rails app.
-
-</p>
-<p>
-
-	This app was first created on November 30, 2013 and I've been plugging away at it ever since.  
-
-
-</p>
+  <br><br><br><br>
+<% end %>
 
